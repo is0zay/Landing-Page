@@ -1,80 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>  
-       <!--Top Section-->
-        <div> 
-            <header>
-                <img src="" alt="">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </header>
-
-            <div>
-                <h1>This website is awesome</h1>
-                <p>This website has some subtext that goes hear under the main title. It's smaller font and coler is lower contrast</p>
-                <button type="button">Sign up</button>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-        </div>
-        <!--End of Top Section-->
-        
-        <!--Upper-Middle Section-->
-        <div>
-            <div>
-                <h2>Some random information.</h2>
-                <div>
-                    <img src="" alt="">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <p>this is some subtext under an illustration or image</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+        <!--Header Section-->
+        <header class="header">
+            <div class="container">
+                <h1 class="header__logo">
+                    <a href="/" aria-label="Isaiah Shembo Logo">
+                        <img src="logo.png" alt="" class="hero_logo" height="43" width="43">
+                    </a>
+                </h1>
+                
+                <div class="header__menu">
+                    <nav class="nav-menu">
+                        <h1 class="sr-only">Main Navigation</h1>
+                        <ul>
+                            <li><a href="#" class="nav-menu__link">header link one</a></li>
+                            <li><a href="#" class="nav-menu__link">header link two</a></li>
+                            <li><a href="#" class="nav-menu__link">header link three</a></li>
+                        </ul>
+                    </nav>
                 </div>
 
             </div>
-        </div>
-        <!--End of Upper Middle Section-->
+        </header>
+    </section>
 
-        <!--Lower Middle Section-->
+
+        <!--Hero Section Start-->
         <div>
-            <blockquote><p><i>This is an inspiring quote, or a testimonial from aa customer. Maybe it's just filling up space, pr maybe people will actually read it. Who knows? All I know is that it looks nice.</i></p><blockquote>
-            <figcaption><b>-Thor, God of Thunder</b></figcaption>
-        </div>
-        <!--End of Lower Middle Section-->
+            <section class="hero-section">
+                <div class="container hero__container">
+                    <div class="hero-section__left">
+                        <h1 class="hero-header">This website is awesome</h1>
+                        <p class="hero-subtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                        <a href="" class="hero-btn">Sign up</a>
+                    </div>
 
-        <!--Bottom Section-->
+                    <div class="hero-section__right">
+                        <img src="Photo Jan 01, 8 55 34 PM-2.jpg" alt="" class="hero-section__img">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+       
+        <!--Upper-Mid Section Start-->
         <div>
-            <figure>
-                <div>
-                    <h3>Call to action! It's time!</h3>
-                    <P>Sign up for our product by clicking that button over there!</P>
-                </div>
+            <section class="upper-mid">
+                <h1 class="upper-mid__header"> Some random information</h1>
+                <div class="container upper-mid__container">
 
-                <div>
-                    <button type="button">Sign Up</button>
+                    <div class="upper-mid__tile">
+                        <img src="My project.png" alt="" class="upper-mid__img">
+                        <p class="upper-mid__caption">this is some subtext under an illustration or image</p>
+
+                    </div>
+
+                    <div class="upper-mid__tile">
+                        <img src="My project.png" alt="" class="upper-mid__img">
+                        <p class="upper-mid__caption">this is some subtext under an illustration or image</p>
+
+                    </div>
+
+                    <div class="upper-mid__tile">
+                        <img src="My project.png" alt="" class="upper-mid__img">
+                        <p class="upper-mid__caption">this is some subtext under an illustration or image</p>
+
+                    </div>
+
+                    <div class="upper-mid__tile">
+                        <img src="My project.png" alt="" class="upper-mid__img">
+                        <p class="upper-mid__caption">this is some subtext under an illustration or image</p>
+
+                    </div>
                 </div>
-            </figure>
+            </section>
         </div>
-    </body>
+
+        <!--Upper-Mid Section Start-->
+        <div>
+            <div class="lower-mid">
+                <blockquote class="lower-mid__quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that is looks nice.</blockquote>
+                <p class="lower-mid__author">-Thor, God of Thunder</p>
+            </div>
+        </div>
+
+        <!--Bottom Section Start-->
+        <div>
+            <div class="bottom">
+                <div class="bottom__call">
+                    <div class="left">
+                        <h1 class="bottom__header">Call to action! It's time!</h1>
+                        <p class="bottom__subtext">Sign up for our product by clicking that button right over there!</p>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="bottom-btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+       
+    </main>
+
     <footer>
-        <p>Copyright &copy; Isaiah Shembo</p>
+        <div class="foot">
+            <p>&copy; The Odin Project - Created by <a href="https://isaiahshembo.com" target="blank">Isaiah Shembo</a></p>
+        </div>
     </footer>
+</body>
 </html>
